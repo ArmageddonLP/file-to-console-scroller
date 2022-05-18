@@ -5,11 +5,8 @@ import java.io.FileReader;
 
 public class Scroller {
 
-    public static void print(String filename) {
-        boolean running = true;
-        while (running) {
-            running = readLineByLine(filename);
-        }
+    public static boolean print(String filename) {
+        return readLineByLine(filename);
     }
 
     private static boolean printLetterByLetter(String message) {

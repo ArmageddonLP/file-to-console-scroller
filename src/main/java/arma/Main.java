@@ -24,7 +24,10 @@ public class Main {
                     prop.getProperty("descriptorRef") + ".jar";
             Runtime.getRuntime().exec("cmd /c start cmd.exe /K \"color f0 && "+jarCommand+"\"");
         } else {
-            Scroller.print(filename);
+            boolean running = true;
+            while(running) {
+                running = Scroller.print(filename);
+            }
         }
     }
 }

@@ -80,7 +80,7 @@
                 <executions>
                     <execution>
                         <id>copy-txt</id>
-                        <phase>generate-sources</phase>
+                        <phase>install</phase>
                         <configuration>
                             <target>
                                 <copy todir="${basedir}/target">
